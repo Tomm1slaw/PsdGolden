@@ -1,0 +1,18 @@
+.jumbotron {
+   background: $light-gray url('/dist/img/jumbotron.png') no-repeat center scroll;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   &__text {
+      text-align: center;
+      color: $white;
+      h3 {
+         margin-bottom: 20px;
+      }
+      h1 {
+         margin-bottom: 30px;
+         text-transform: uppercase;
+      }
+   }
+}

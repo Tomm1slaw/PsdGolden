@@ -1,2 +1,5 @@
-console.log('works');
-console.log('asdf');
+$(function() {
+   $('#menu').slicknav({
+      label: ''
+   });
+});
