@@ -1,0 +1,64 @@
+// better box-model
+*,
+*:after,
+*:before {
+   box-sizing: border-box;
+}
+
+body {
+   font: $font-primary;
+   color: $text;
+   background: $white;
+}
+
+// links
+a {
+   text-decoration: none;
+   transition: all 150ms ease;
+}
+
+a:hover {
+   opacity: 0.8;
+}
+
+// responsive image
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+// form
+input,
+select,
+textarea {
+   border: none;
+   background: $white;
+   outline: none;
+   text-transform: uppercase;
+}
+
+// headings
+h1 {
+   font-size: 75px;
+}
+h3 {
+   font-size: 40px;
+}
+h4 {
+   font-size: 18px;
+}
+h5 {
+   font-size: 16px;
+}
+h6 {
+   font-size: 14px;
+}
+
+// button
+.btn {
+   background: $yellow;
+   font-size: 18px;
+   border: none;
+   color: $white;
+   padding: 10px 20px;
+}
