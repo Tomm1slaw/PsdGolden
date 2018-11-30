@@ -1,0 +1,21 @@
+.title {
+   text-align: center;
+   margin: 40px 0 40px;
+   h3 {
+      color: $black;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 20px;
+   }
+}
+
+.title-sm {
+   text-align: center;
+   margin-top: 20px;
+   h4 {
+      color: $black;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 10px;
+   }
+}

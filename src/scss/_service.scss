@@ -1,0 +1,21 @@
+.service {
+   background: $white;
+}
+
+.service-card {
+   flex-basis: 30%;
+   p {
+      color: $text;
+   }
+   a {
+      display: block;
+   }
+}
+// icons
+.service-card ion-icon {
+   font-size: 64px;
+   color: $yellow;
+   padding: 10px;
+   border: 3px solid $yellow;
+   border-radius: 50%;
+}
