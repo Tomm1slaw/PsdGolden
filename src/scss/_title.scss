@@ -7,6 +7,9 @@
       font-weight: 700;
       margin-bottom: 20px;
    }
+   p {
+      color: $text;
+   }
 }
 
 .title-sm {
@@ -17,5 +20,8 @@
       text-transform: uppercase;
       font-weight: 700;
       margin-bottom: 10px;
+   }
+   p {
+      color: $text;
    }
 }

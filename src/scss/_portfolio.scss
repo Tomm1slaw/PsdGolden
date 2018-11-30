@@ -1,0 +1,17 @@
+.portfolio {
+   background: $light-gray;
+}
+
+// gallery
+.gallery {
+   justify-content: space-around;
+   &__item {
+      background: $white;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      & div {
+         max-width: 290px;
+         max-height: 300px;
+      }
+   }
+}
