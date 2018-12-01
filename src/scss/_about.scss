@@ -1,0 +1,62 @@
+.about__item {
+   position: relative;
+   width: 100%;
+   margin-bottom: 90px;
+   h4 {
+      color: $black;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+   }
+   span {
+      color: $black;
+      font-weight: 700;
+      margin-bottom: 5px;
+      text-transform: capitalize;
+   }
+   &:after {
+      position: absolute;
+      content: '';
+      background: $picutre-border;
+      height: 90px;
+      width: 3px;
+   }
+}
+
+.about-img {
+   max-width: 180px;
+   max-height: 180px;
+   margin: 0 auto;
+}
+
+.about-left {
+   position: absolute;
+   max-width: 300px;
+   text-align: right;
+   left: 85px;
+}
+
+.about-right {
+   position: absolute;
+   max-width: 300px;
+   text-align: left;
+   right: 85px;
+}
+
+.about-last {
+   width: 100%;
+}
+
+.about-box {
+   max-width: 170px;
+   max-height: 170px;
+   background: $yellow;
+   margin: 0 auto;
+   border-radius: 50%;
+   p {
+      font-size: 18px;
+      max-width: 100px;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 2.3;
+   }
+}
