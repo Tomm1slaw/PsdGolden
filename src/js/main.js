@@ -24,4 +24,16 @@ $(document).ready(function() {
          $(this).addClass('active');
       }
    });
+
+   // add background color to navigation
+   $(document).ready(function() {
+      $(window).scroll(function() {
+         var scroll = $(window).scrollTop();
+         if (scroll > 180) {
+            $('.page-header').css({ 'background-color': 'black' });
+         } else {
+            $('.page-header').css({ 'background-color': 'transparent' });
+         }
+      });
+   });
 });
