@@ -1,0 +1,24 @@
+.team {
+   background: $light-gray;
+   & figure {
+      flex-basis: 25%;
+   }
+   &__img {
+      max-width: 230px;
+      max-height: 230px;
+      margin: 0 auto;
+      & > img {
+         border-radius: 50%;
+      }
+   }
+}
+
+// social icons
+.team__icons ion-icon {
+   font-size: 25px;
+   color: $black;
+   padding: 5px;
+   margin: 0 5px;
+   border: 1px solid $black;
+   border-radius: 50%;
+}
