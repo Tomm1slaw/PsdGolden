@@ -1,0 +1,18 @@
+footer {
+   padding: 20px 0;
+   p {
+      flex-grow: 1;
+   }
+}
+.footer-icons {
+   flex-grow: 2;
+   text-align: left;
+   ion-icon {
+      font-size: 25px;
+      color: $white;
+      background: $black;
+      padding: 5px;
+      margin: 0 5px;
+      border-radius: 50%;
+   }
+}

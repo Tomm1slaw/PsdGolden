@@ -25,6 +25,12 @@
       display: block;
       padding: 15px 10px;
       margin: 0 20px;
+      &:hover {
+         color: $yellow;
+      }
+   }
+   .active {
+      color: $yellow;
    }
 }
 // slicknav
