@@ -1,15 +1,14 @@
 .team {
    background: $light-gray;
    & figure {
-      flex-basis: 25%;
+      flex-basis: 23%;
    }
    &__img {
-      max-width: 230px;
-      max-height: 230px;
+      max-width: 155px;
       margin: 0 auto;
-      & > img {
-         border-radius: 50%;
-      }
+      max-height: 155px;
+      border-radius: 50%;
+      overflow: hidden;
    }
 }
 
@@ -21,4 +20,11 @@
    margin: 0 5px;
    border: 1px solid $black;
    border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+   .team figure {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+   }
 }

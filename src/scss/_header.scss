@@ -1,10 +1,9 @@
 .page-header {
    position: fixed;
-   padding: 20px 0;
    top: 0;
    left: 0;
    right: 0;
-   z-index: 999;
+   z-index: 1;
 }
 
 .logo {
@@ -12,12 +11,8 @@
    max-height: 50px;
 }
 
-#menu {
-   ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-   }
+.menu {
+   padding: 0;
    li {
       display: inline-block;
    }
@@ -33,7 +28,28 @@
       color: $yellow;
    }
 }
-// slicknav
 .slicknav_menu {
    display: none;
+}
+
+@media (max-width: 900px) {
+   .menu {
+      display: none;
+   }
+   .logo {
+      margin-top: 15px;
+      z-index: 3;
+   }
+   .slicknav_nav {
+      display: block;
+      a {
+         text-align: center;
+      }
+   }
+   .slicknav_menu {
+      display: block;
+      position: fixed;
+      width: 100%;
+      z-index: 2;
+   }
 }

@@ -1,17 +1,19 @@
 .contact {
    background: $black url('/dist/img/map.png') no-repeat center / cover;
-   height: 600px;
    width: 100%;
    h3,
    i {
       color: $white;
+   }
+   button {
+      margin: 0 auto;
    }
 }
 
 // form fields
 .form-group {
    flex-basis: 48%;
-   margin: 0 auto 30px;
+   margin: 0 auto 40px;
    min-height: 200px;
 }
 .form-flex {
@@ -29,4 +31,10 @@
 
 .form-group textarea {
    min-height: 200px;
+}
+
+@media (max-width: 900px) {
+   .form-group {
+      flex-basis: 100%;
+   }
 }

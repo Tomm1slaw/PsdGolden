@@ -7,8 +7,9 @@
       <title>Golden PSD</title>
       <!-- Vendor -->
       <link href="https://unpkg.com/ionicons@4.4.8/dist/css/ionicons.min.css" rel="stylesheet" />
-      <link rel="stylesheet" href="/src/js/slick/slick.css" />
-      <link rel="stylesheet" href="/src/js/slick/slick-theme.css" />
+      <link rel="stylesheet" href="src/js/slick/slick-theme.css" />
+      <link rel="stylesheet" href="src/js/slick/slick.css" />
+      <link rel="stylesheet" href="src/js/slicknav/slicknav.min.css">
       <!-- Site -->
       <link rel="stylesheet" href="dist/css/style.css" />
    </head>
@@ -21,8 +22,8 @@
                   <img src="/src/img/logo.png" alt="golden" title="Golden" />
                </a>
             </div>
-            <nav id="menu">
-               <ul>
+            <nav>
+               <ul class="menu" id="menu">
                   <li><a href="#home">Home</a></li>
                   <li><a href="#service">Service</a></li>
                   <li><a href="#portfolio">Portfolio</a></li>
@@ -37,7 +38,7 @@
             <div class="jumbotron__text">
                <h3><i>Welcome To Our Studio!</i></h3>
                <h1>It’s nice to Meet you</h1>
-               <button type="submit" class="btn">tell me more</button>
+               <a href="mailto:example@com" class="btn">tell me more</a>
             </div>
          </section>
          <section class="service" id="service">
@@ -103,7 +104,15 @@
             </header>
             <div class="container gallery">
                <figure class="gallery__item">
-                  <div><img src="/dist/img/ebony.png" alt="portfolio" /></div>
+                  <div class="wrapper">
+                     <div class="overlay">
+                        <div class="gallery-icons">
+                           <a href="#"><ion-icon name="link"></ion-icon></a>
+                           <a href="#"><ion-icon name="paper-plane"></ion-icon></a>
+                        </div>
+                     </div>
+                     <img src="/dist/img/ebony.png" alt="portfolio" />
+                  </div>
                   <figcaption>
                      <header class="title-sm">
                         <h4>Ebony & Ivory</h4>
@@ -112,7 +121,15 @@
                   </figcaption>
                </figure>
                <figure class="gallery__item">
-                  <div><img src="/dist/img/smart.png" alt="portfolio" /></div>
+                  <div class="wrapper">
+                     <div class="overlay">
+                        <div class="gallery-icons">
+                           <a href="#"><ion-icon name="link"></ion-icon></a>
+                           <a href="#"><ion-icon name="paper-plane"></ion-icon></a>
+                        </div>
+                     </div>
+                     <img src="/dist/img/smart.png" alt="portfolio" />
+                  </div>
                   <figcaption>
                      <header class="title-sm">
                         <h4>Smart Stationary</h4>
@@ -121,7 +138,15 @@
                   </figcaption>
                </figure>
                <figure class="gallery__item">
-                  <div><img src="/dist/img/clever.png" alt="portfolio" /></div>
+                  <div class="wrapper">
+                     <div class="overlay">
+                        <div class="gallery-icons">
+                           <a href="#"><ion-icon name="link"></ion-icon></a>
+                           <a href="#"><ion-icon name="paper-plane"></ion-icon></a>
+                        </div>
+                     </div>
+                     <img src="/dist/img/clever.png" alt="portfolio" />
+                  </div>
                   <figcaption>
                      <header class="title-sm">
                         <h4>Clever Poster</h4>
@@ -130,7 +155,15 @@
                   </figcaption>
                </figure>
                <figure class="gallery__item">
-                  <div><img src="/dist/img/vinyl.png" alt="portfolio" /></div>
+                  <div class="wrapper">
+                     <div class="overlay">
+                        <div class="gallery-icons">
+                           <a href="#"><ion-icon name="link"></ion-icon></a>
+                           <a href="#"><ion-icon name="paper-plane"></ion-icon></a>
+                        </div>
+                     </div>
+                     <img src="/dist/img/vinyl.png" alt="portfolio" />
+                  </div>
                   <figcaption>
                      <header class="title-sm">
                         <h4>Vinyl Record</h4>
@@ -139,7 +172,15 @@
                   </figcaption>
                </figure>
                <figure class="gallery__item">
-                  <div><img src="/dist/img/treehouse.png" alt="portfolio" /></div>
+                  <div class="wrapper">
+                     <div class="overlay">
+                        <div class="gallery-icons">
+                           <a href="#"><ion-icon name="link"></ion-icon></a>
+                           <a href="#"><ion-icon name="paper-plane"></ion-icon></a>
+                        </div>
+                     </div>
+                     <img src="/dist/img/treehouse.png" alt="portfolio" />
+                  </div>
                   <figcaption>
                      <header class="title-sm">
                         <h4>Treehouse Template</h4>
@@ -148,7 +189,15 @@
                   </figcaption>
                </figure>
                <figure class="gallery__item">
-                  <div><img src="/dist/img/burned.png" alt="portfolio" /></div>
+                  <div class="wrapper">
+                     <div class="overlay">
+                        <div class="gallery-icons">
+                           <a href="#"><ion-icon name="link"></ion-icon></a>
+                           <a href="#"><ion-icon name="paper-plane"></ion-icon></a>
+                        </div>
+                     </div>
+                     <img src="/dist/img/burned.png" alt="portfolio" />
+                  </div>
                   <figcaption>
                      <header class="title-sm">
                         <h4>Burned Logo</h4>
@@ -164,7 +213,7 @@
                <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
             </header>
             <div class="container">
-               <div class="about__item">
+               <div class="about__item about__item--reverse">
                   <div class="about-left">
                      <h4>Burned Logo</h4>
                      <span>Lorem ipsum dolor sit.</span>
@@ -175,9 +224,10 @@
                         consequuntur!
                      </p>
                   </div>
-                  <div class="about-img">
+                  <div class="about-left__img">
                      <a href="#"> <img src="/dist/img/july.png" alt="image"/></a>
                   </div>
+                  <div class="offset"></div>
                </div>
                <div class="about__item">
                   <div class="about-right">
@@ -190,11 +240,12 @@
                         consequuntur!
                      </p>
                   </div>
-                  <div class="about-img">
+                  <div class="about-right__img">
                      <a href="#"> <img src="/dist/img/january.png" alt="image"/></a>
                   </div>
+                  <div class="offset"></div>
                </div>
-               <div class="about__item">
+               <div class="about__item about__item--reverse">
                   <div class="about-left">
                      <h4>Burned Logo</h4>
                      <span>Lorem ipsum dolor sit.</span>
@@ -205,9 +256,10 @@
                         consequuntur!
                      </p>
                   </div>
-                  <div class="about-img">
+                  <div class="about-left__img">
                      <a href="#"> <img src="/dist/img/december.png" alt="image"/></a>
                   </div>
+                  <div class="offset"></div>
                </div>
                <div class="about__item">
                   <div class="about-right">
@@ -220,14 +272,13 @@
                         consequuntur!
                      </p>
                   </div>
-                  <div class="about-img">
+                  <div class="about-right__img">
                      <a href="#"> <img src="/dist/img/february.png" alt="image"/></a>
                   </div>
+                  <div class="offset"></div>
                </div>
-               <div class="about-last">
-                  <div class="about-box">
-                     <a href="#"> <p>Our Story Continues ...</p> </a>
-                  </div>
+               <div class="about__item--last">
+                  <div class="about-box"><p>Our Story Continue...</p></div>
                </div>
             </div>
          </section>
@@ -239,7 +290,7 @@
             <div class="container">
                <figure>
                   <div class="team__img">
-                     <img src="http://lorempixel.com/220/220/people" alt="team" />
+                     <img src="https://picsum.photos/200/200/?random" alt="team" />
                   </div>
                   <figcaption>
                      <header class="title-sm">
@@ -255,7 +306,7 @@
                </figure>
                <figure>
                   <div class="team__img">
-                     <img src="http://lorempixel.com/220/220/people" alt="team" />
+                     <img src="https://picsum.photos/200/200/?random" alt="team" />
                   </div>
                   <figcaption>
                      <header class="title-sm">
@@ -271,7 +322,7 @@
                </figure>
                <figure>
                   <div class="team__img">
-                     <img src="http://lorempixel.com/220/220/people" alt="team" />
+                     <img src="https://picsum.photos/200/200/?random" alt="team" />
                   </div>
                   <figcaption>
                      <header class="title-sm">
@@ -322,8 +373,7 @@
                <div class="form-group">
                   <textarea placeholder="your message..." id="message" required></textarea>
                </div>
-
-               <div class="form-group"><button type="submit" class="btn">send message</button></div>
+               <button type="submit" class="btn">send message</button>
             </form>
          </section>
       </main>
@@ -337,12 +387,11 @@
                <a href="#"><ion-icon name="logo-sass"></ion-icon></a>
             </div>
          </div>
-         <div></div>
       </footer>
 
       <script src="https://unpkg.com/ionicons@4.4.8/dist/ionicons.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="src/js/jquery.slicknav.min.js"></script>
+      <script src="src/js/slicknav/jquery.slicknav.min.js"></script>
       <script src="src/js/slick/slick.min.js"></script>
       <script src="src/js/jquery.smooth-scroll.min.js"></script>
       <script src="dist/js/scripts.min.js"></script>

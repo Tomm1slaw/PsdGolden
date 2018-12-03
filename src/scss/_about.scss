@@ -1,6 +1,20 @@
-.about__item {
+.about > .container {
    position: relative;
-   width: 100%;
+}
+
+.about > .container::before {
+   content: '';
+   position: absolute;
+   width: 3px;
+   top: 0;
+   background: $picutre-border;
+   left: 50%;
+   height: 100%;
+   z-index: -1;
+}
+
+.about__item {
+   display: flex;
    margin-bottom: 90px;
    h4 {
       color: $black;
@@ -13,51 +27,73 @@
       margin-bottom: 5px;
       text-transform: capitalize;
    }
-   &:after {
-      position: absolute;
-      content: '';
-      background: $picutre-border;
-      height: 90px;
-      width: 3px;
+   &--last {
+      flex-basis: 100%;
    }
 }
 
-.about-img {
-   max-width: 180px;
-   max-height: 180px;
-   margin: 0 auto;
+.about-left__img {
+   flex: 2;
+}
+
+.about-right__img {
+   flex: 2;
+   order: 1;
 }
 
 .about-left {
-   position: absolute;
-   max-width: 300px;
+   flex: 2;
    text-align: right;
-   left: 85px;
+}
+
+.offset {
+   flex: 2;
 }
 
 .about-right {
-   position: absolute;
-   max-width: 300px;
+   flex: 2;
+   order: 2;
    text-align: left;
-   right: 85px;
 }
 
 // last cicrle with some text
-.about-last {
-   width: 100%;
-}
-
 .about-box {
    max-width: 170px;
    max-height: 170px;
    background: $yellow;
    margin: 0 auto;
    border-radius: 50%;
+   overflow: hidden;
    p {
       font-size: 18px;
-      max-width: 100px;
+      line-height: 2;
+      margin: 0;
+      word-spacing: 30px;
+      text-transform: uppercase;
+      max-width: 170px;
+      max-height: 170px;
+      padding: 30px;
+      color: $white;
+   }
+}
+
+@media (max-width: 900px) {
+   .about > .container::before {
+      display: none;
+   }
+   .about__item {
+      flex-direction: column;
+      margin-bottom: 20px;
+   }
+   .about__item--reverse {
+      flex-direction: column-reverse;
+   }
+   .about-left,
+   .about-right {
       text-align: center;
-      margin: 0 auto;
-      line-height: 2.3;
+   }
+   .about-left__img,
+   .about-right__img {
+      margin-bottom: 20px;
    }
 }

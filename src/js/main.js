@@ -1,8 +1,8 @@
 $(document).ready(function() {
    //navigation
-   $(function() {
+   $(document).ready(function() {
       $('#menu').slicknav({
-         label: ''
+         closeOnClick: true
       });
    });
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
    $(document).ready(function() {
       $('.clients').slick({
          autoplay: true,
-         speed: 100
+         autoplaySpeed: 1500
       });
    });
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
    $(document).ready(function() {
       $(window).scroll(function() {
          var scroll = $(window).scrollTop();
-         if (scroll > 180) {
+         if (scroll > 175) {
             $('.page-header').css({ 'background-color': 'black' });
          } else {
             $('.page-header').css({ 'background-color': 'transparent' });

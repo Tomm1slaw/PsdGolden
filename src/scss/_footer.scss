@@ -16,3 +16,12 @@ footer {
       border-radius: 50%;
    }
 }
+
+@media (max-width: 900px) {
+   footer > .container {
+      flex-direction: column;
+   }
+   footer p {
+      margin-bottom: 40px;
+   }
+}
